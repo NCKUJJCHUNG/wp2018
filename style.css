@@ -1,7 +1,10 @@
-#name_para{
+#name_para,#name_para2{
   position:absolute;
   left: 200px;top:350px;
   font-size:25px;
+}
+#name_para2{
+  display:none;
 }
 #pic2,#pic1{
   position:absolute;

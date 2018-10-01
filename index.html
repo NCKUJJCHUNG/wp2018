@@ -27,6 +27,10 @@
         Just one thing I like most of all in my life<br>
         is architecture visualization.Just trust<br>
         me and you'll see the result!</p>
+      <p class="paragraph" id="name_para2">
+        Architecture is my passon, while visulization<br>
+        is the way of sharing all the carziest ideas!<br>
+        Always ready to help. Cheers!</p>
     </div>
     <div class="right">
       <h2 id="aboutme">Meet the team</h2>
@@ -41,8 +45,8 @@
       var pic2_css = {color:'black'};
       $(document).ready(function(){
         setInterval(function(){
-          $("#pic1").fadeToggle(1000);
-          $("#pic2").fadeToggle(1000);
+          $("#pic1,#name_para").fadeToggle(1000);
+          $("#pic2,#name_para2").fadeToggle(1000);
 
           $("#Aman").animate(pic1_css,1000,rowback());
           $("#Jwom").animate(pic2_css,1000,rowback());
