@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <title>鍾佳城的網頁</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="topic">
       <h1 id="hello">KOTRA</h1>
     </div>
     <div class="left_nav">
-      <h3 class="intro">textbox</h3>
-      <h3 class="interest">textbox2</h3>
+      <ul> 
+        <li>textbox11</li>
+        <li>textbox2</li>
+      </ul>
     </div>
-    <div class="middle">
-      <img id="pic1" src="https://i.imgur.com/8Sm8PNq.png">
+    <div class="middle"> 
+      <div id="pic1">
+        <img src="https://i.imgur.com/8Sm8PNq.png">
+      </div>
+      <div id="pic2">
+        <img src="https://i.imgur.com/eeDqsph.png">
+      </div>
       <p class="paragraph" id="name_para">
         Just one thing I like most of all in my life<br>
         is architecture visualization.Just trust<br>
@@ -22,9 +30,38 @@
     </div>
     <div class="right">
       <h2 id="aboutme">Meet the team</h2>
-      <h3 id="name">Artem</h3>
-      <h3 id="dep">Julia</h3>
+      <ul>
+        <li id="Aman">Artem</li>
+        <li id="Jwom">Julia</li>
+      </ul>
     </div>
+    
+    <script>
+      var pic1_css = {color:'red'};
+      var pic2_css = {color:'black'};
+      $(document).ready(function(){
+        setInterval(function(){
+          $("#pic1").fadeToggle(1000);
+          $("#pic2").fadeToggle(1000);
 
+          $("#Aman").animate(pic1_css,1000,rowback());
+          $("#Jwom").animate(pic2_css,1000,rowback());
+        },2500);
+      });
+
+      function rowback(){
+        if(pic1_css.color==='red')
+        {
+          pic1_css.color='black';
+          pic2_css.color='red';
+        }
+        else
+        {
+          pic1_css.color='red';
+          pic2_css.color='black';
+        }
+      }
+    </script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
