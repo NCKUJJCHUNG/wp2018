@@ -6,6 +6,11 @@
 #name_para2{
   display:none;
 }
+#pic1{
+  background-image: url('./Aman.png');
+  width: 300px;
+  height: 300px;
+}
 #pic2,#pic1{
   position:absolute;
   left:200px;
